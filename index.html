@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <ul>
+        <li>
+          <a href="border.html">Border</a>
+        </li>
+        <li>
+          <a href="index.html">Box shadow</a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="hero">
+      <div id="wrap1" class="wrap">
+
+        <h2>Box-Shadow</h2>
+
+        <div class="input-field">
+          <input type="range" id="shadow-horozontal" name="horizontal" min="-100" max="100" value="2">
+          <label for="horizontal">Horizontal</label>
+        </div>
+
+        <div class="input-field">
+          <input type="range" id="shadow-vertical" name="vertical" min="-100" max="100" value="2">
+          <label for="vertical">Vertical</label>
+        </div>
+
+        <div class="input-field">
+          <input type="range" id="shadow-blur" name="shadow-blur" min="0" max="100" value="2">
+          <label for="shadow-blur">Shadow-Blur</label>
+        </div>
+
+        <div class="input-field">
+          <input type="range" id="shadow-spread" name="shadow-spread" min="0" max="100" value="2">
+          <label for="shadow-spread">Shadow-Spread</label>
+        </div>
+
+        <div class="input-field">
+          <input type="color" id="shadow-color" name="shadow-color" value="#000000">
+          <label for="shadow-color">Shadow-Color</label>
+        </div>
+
+      </div>
+
+      <div class="wrapperbox">
+        <div class="box" id="box"></div>
+      </div>
+
+
+
+    </div>
+
+    <footer>
+      <p class="value-css" id="value-css"></p>
+    </footer>
+
+  </div>
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
