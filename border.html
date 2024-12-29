@@ -11,6 +11,8 @@
 
 <body>
 
+
+
   <div class="container">
 
     <header>
@@ -25,23 +27,26 @@
     </header>
 
     <div class="hero">
+      <div id="snow-container"></div>
+
+
 
       <div id="wrap2" class="wrap">
 
         <h2>Border-Radius </h2>
 
         <div class="input-field">
-          <input type="range" id="border-weight" name="border-weight" min="0%" max="100%" value="2">
+          <input type="range" id="border-weight" name="border-weight" min="0" max="90" value="1">
           <label for="border-weight">Border-Weight</label>
         </div>
 
         <div class="input-field">
-          <input type="range" id="border-radius" name="border-radius" min="0%" max="100%" value="2">
+          <input type="range" id="border-radius" name="border-radius" min="0" max="50" value="0">
           <label for="border-radius">Border-Radius</label>
         </div>
 
         <div class="input-field">
-          <input type="color" id="border-color" name="border-color">
+          <input type="color" id="border-color" name="border-color" value="#000000">
           <label for="border-color">Border-color</label>
         </div>
 
@@ -59,9 +64,12 @@
       <p class="value-css" id="value-css"></p>
     </footer>
 
+ 
+
   </div>
 
   <script src="./js/border.js"></script>
+
 </body>
 
 </html>
