@@ -66,3 +66,16 @@ function createSnowflakes() {
 
 // Create snowflakes periodically
 setInterval(createSnowflakes, 100); // Create snowflakes every 100ms
+
+
+
+window.onload = function() {
+  const modal = document.getElementById('newYearModal');
+  modal.style.display = 'block';
+};
+
+// Close modal when clicking anywhere on the page
+document.addEventListener('click', function() {
+  const modal = document.getElementById('newYearModal');
+  modal.style.display = 'none';
+});
