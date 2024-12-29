@@ -65,6 +65,10 @@ ul li a {
   font-size: 40px;
 }
 
+a:active {
+  transform: scale(1.1);
+}
+
 .hero {
   height: 76vh;
   display: flex;
@@ -93,6 +97,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 500px;
   justify-content: center;
   padding: 10px 50px;
   border: 1px solid gainsboro;
@@ -154,7 +159,7 @@ label {
   transform: translateY(-200%);
   font-size: 1.2rem;
   left: 0px;
-  top: 10px;
+  top: 30px;
 }
 
 h2 {
