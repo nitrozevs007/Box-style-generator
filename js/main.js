@@ -46,11 +46,11 @@ function createSnowflakes() {
   // Randomize starting position
   const side = Math.random() > 0.5 ? 'left' : 'right'; // Choose random side (left or right)
   if (side === 'left') {
-      snowflake.style.left = Math.random() * 50 + 'vw'; // Start from left side
-      snowflake.style.setProperty('--fall-x', Math.random() * 50 + 'vw'); // Fall to the right
+    snowflake.style.left = Math.random() * 50 + 'vw'; // Start from left side
+    snowflake.style.setProperty('--fall-x', Math.random() * 50 + 'vw'); // Fall to the right
   } else {
-      snowflake.style.right = Math.random() * 50 + 'vw'; // Start from right side
-      snowflake.style.setProperty('--fall-x', '-' + Math.random() * 50 + 'vw'); // Fall to the left
+    snowflake.style.right = Math.random() * 50 + 'vw'; // Start from right side
+    snowflake.style.setProperty('--fall-x', '-' + Math.random() * 50 + 'vw'); // Fall to the left
   }
 
   // Randomize animation duration and size
@@ -60,7 +60,7 @@ function createSnowflakes() {
   container.appendChild(snowflake);
 
   setTimeout(() => {
-      snowflake.remove();
+    snowflake.remove();
   }, 5000); // Remove snowflake after 5 seconds
 }
 
@@ -69,13 +69,13 @@ setInterval(createSnowflakes, 100); // Create snowflakes every 100ms
 
 
 
-window.onload = function() {
+window.onload = function () {
   const modal = document.getElementById('newYearModal');
   modal.style.display = 'block';
 };
 
 // Close modal when clicking anywhere on the page
-document.addEventListener('click', function() {
+document.addEventListener('click', function () {
   const modal = document.getElementById('newYearModal');
   modal.style.display = 'none';
 });

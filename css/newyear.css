@@ -20,23 +20,3 @@
   border-radius: 0;
   margin: 0;
 }
-
-.modal h1 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.modal button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.modal button:hover {
-  background-color: #0056b3;
-}
