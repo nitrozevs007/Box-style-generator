@@ -41,26 +41,26 @@ function createSnowflakes() {
   // Randomize starting position
   const side = Math.random() > 0.5 ? 'left' : 'right'; // Choose random side (left or right)
   if (side === 'left') {
-      snowflake.style.left = Math.random() * 50 + 'vw'; // Start from left side
+      snowflake.style.left = Math.random() * 100 + 'vw'; // Start from left side
       snowflake.style.setProperty('--fall-x', Math.random() * 50 + 'vw'); // Fall to the right
   } else {
-      snowflake.style.right = Math.random() * 50 + 'vw'; // Start from right side
+      snowflake.style.right = Math.random() * 100 + 'vw'; // Start from right side
       snowflake.style.setProperty('--fall-x', '-' + Math.random() * 50 + 'vw'); // Fall to the left
   }
 
   // Randomize animation duration and size
   snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // Between 2-5 seconds
-  snowflake.style.fontSize = Math.random() * 20 + 10 + 'px'; // Between 10-30px
+  snowflake.style.fontSize = Math.random() * 5 + 10 + 'px'; // Between 10-30px
 
   container.appendChild(snowflake);
 
   setTimeout(() => {
       snowflake.remove();
-  }, 5000); // Remove snowflake after 5 seconds
+  }, 10000); // Remove snowflake after 5 seconds
 }
 
 // Create snowflakes periodically
-setInterval(createSnowflakes, 100); // Create snowflakes every 100ms
+setInterval(createSnowflakes, 20); // Create snowflakes every 100ms
 
 
 
