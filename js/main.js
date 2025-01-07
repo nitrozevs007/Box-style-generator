@@ -65,4 +65,4 @@ function createSnowflakes() {
 }
 
 // Create snowflakes periodically
-setInterval(createSnowflakes, 10); // Create snowflakes every 100ms
+setInterval(createSnowflakes, 50); // Create snowflakes every 100ms

@@ -56,11 +56,11 @@ function createSnowflakes() {
 
   setTimeout(() => {
       snowflake.remove();
-  }, 10000); // Remove snowflake after 5 seconds
+  }, 5000); // Remove snowflake after 5 seconds
 }
 
 // Create snowflakes periodically
-setInterval(createSnowflakes, 20); // Create snowflakes every 100ms
+setInterval(createSnowflakes, 50); // Create snowflakes every 100ms
 
 
 
